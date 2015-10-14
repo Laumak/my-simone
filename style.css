@@ -1,10 +1,10 @@
 /*
-Theme Name: my-simone
-Theme URI: http://underscores.me/
-Author: Underscores.me
-Author URI: http://underscores.me/
-Description: Description
-Version: 1.0.0
+Theme Name: My Simone
+Theme URI: #
+Author: Lauri Mäkinen
+Author URI: #
+Description: _s pohjainen Wordpress teema.
+Version: 0.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: my-simone
@@ -272,9 +272,10 @@ input,
 select,
 textarea {
 	color: #404040;
-	font-family: sans-serif;
-	font-size: 16px;
-	font-size: 1rem;
+        color: hsl(0,0%,25%);
+	font-family: 'PT Serif', serif;
+	font-size: 11px;
+	font-size: 1.1rem;
 	line-height: 1.5;
 }
 
@@ -284,7 +285,11 @@ h3,
 h4,
 h5,
 h6 {
-	clear: both;
+	clear: right;
+        font-weight: 700;
+        font-family: 'Lato', sans-serif;
+        color: #000;
+        color: hsl(0,0%,0%);
 }
 
 p {
@@ -741,7 +746,7 @@ a:active {
 }
 
 .hentry {
-	margin: 0 0 1.5em;
+	margin: 0 0 1em;
 }
 
 .byline,
@@ -757,7 +762,7 @@ a:active {
 .page-content,
 .entry-content,
 .entry-summary {
-	margin: 1.5em 0 0;
+	margin: 1em 0 0;
 }
 
 .page-links {
@@ -887,4 +892,88 @@ object {
 
 .gallery-caption {
 	display: block;
+}
+
+// Tutoriaalin CSS
+
+.masthead {
+    padding: 3em 0 2em;
+    margin: 0 auto;
+    color: hsl(0, 0%, 100%);
+    background: hsl(0, 0%, 15%);
+}
+
+.wrapper {
+    max-width: 1000px;
+    padding: 0 2em;
+    margin: 3em auto;
+}
+
+h1 {
+    font-size: 2rem;
+}
+.sub {
+    margin-top: 1em;
+    font-family: 'helvetica', 'arial', sans-serif;
+    font-weight: lighter;
+    font-size: 1.5rem;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-weight: bold;
+}
+
+.navigation {
+    background: hsl(0, 0%, 45%);
+    padding: .1em 0;
+}
+
+.navigation ul {
+    font-family: 'helvetica', 'arial', sans-serif;
+    font-size: 15px;
+}
+
+.navigation li {
+    font-weight: bold;
+}
+
+.navigation ul ul {
+    margin-left: 2em;
+    margin-bottom: 1em;
+}
+
+.navigation ul ul li {
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.navigation a {
+    display: block;
+    padding: .3em 0;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-top: 3rem;
+}
+
+h3 { 
+    font-size: 1.5rem;
+    padding-bottom: .4rem;
+    margin-top: 4rem;
+    margin-bottom: -.4rem;
+    border-bottom: 1px solid hsl(0, 0%, 75%);
+}
+
+h4 {
+    font-size: 1.3rem;
+    margin-top: 2.4rem;
+    margin-bottom: 1.2rem;
 }
