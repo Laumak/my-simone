@@ -1,5 +1,4 @@
 ##My Simone
-===
 
 [_s](http://underscores.me/)-pohjainen Wordpress teema.
 
