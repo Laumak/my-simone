@@ -641,7 +641,7 @@ a:active {
 		border: 0;
 		box-shadow: none;
 	}
-	
+
 	.main-navigation.toggled .nav-menu {
 		display: block;
 		border-top: 1px solid;
@@ -653,27 +653,27 @@ a:active {
         display: none;
         padding-left: 0;
 	}
-	.main-navigation li { 
-		float: none; 
+	.main-navigation li {
+		float: none;
 	}
 
-	.main-navigation li a { 
-		padding: 1.3em 2em; 
+	.main-navigation li a {
+		padding: 1.3em 2em;
 	}
 
-	.main-navigation li li a { 
-		padding-left: 4em; 
+	.main-navigation li li a {
+		padding-left: 4em;
 	}
 
-	.main-navigation li li li a { 
-		padding-left: 6em; 
+	.main-navigation li li li a {
+		padding-left: 6em;
 	}
 
 	.main-navigation li:hover > a {
 		background: #313131;
 		background: hsl(0, 0%, 19%);
 	}
-	
+
 	.main-navigation ul ul,
 	.main-navigation ul ul ul {
 		position: relative;
@@ -684,7 +684,7 @@ a:active {
 		background: #313131;
 		background: hsl(0, 0%, 19%);
 	}
-	
+
 	.main-navigation ul ul a { width: 100%; }
 
 	.main-navigation ul a:hover,
@@ -707,7 +707,7 @@ a:active {
 		color: #fff;
 		color: hsl(0, 0%, 100%);
 		background: #4d4d4d;
-		background: hsl(0, 0%, 30%);    
+		background: hsl(0, 0%, 30%);
 	}
 }
 
@@ -743,6 +743,7 @@ a:active {
 	height: 1px;
 	width: 1px;
 	overflow: hidden;
+	right: 0;
 }
 
 .screen-reader-text:focus {
@@ -887,6 +888,66 @@ p.site-description {
 		padding: 1rem;
 		border: none;
 	}
+}
+
+/* Search */
+
+.search-toggle {
+  float: right;
+  width: 62px;
+  height: 62px;
+  padding: 9px;
+  margin-right: 20px;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+@media screen and (max-width: 600px) {
+	.search-toggle {
+		position: absolute;
+		top: 0;
+		right: 0;
+		margin-right: 0;
+	}
+}
+
+.search-toggle:hover,
+.search-toggle.active {
+	background: #4d4d4d;
+}
+
+input[type="search"] {
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.search-box-wrapper {
+	z-index: 2;
+	width: 100%;
+	display: none;
+}
+
+.search-box {
+	padding: 10px;
+	background: #4d4d4d;
+}
+
+.search-box .search-field {
+	max-width: 362px;
+	float:right;
+	margin-top: 10px;
+	padding: 5px 10px 5px 20px;
+	font-size: 20px;
+	background-color: #fff;
+	border: 0;
+}
+
+.error404 .search-submit,
+.search .search-submit,
+.search-box .search-submit {
+	display: none;
 }
 
 /*--------------------------------------------------------------
@@ -1130,7 +1191,7 @@ h2 {
     margin-top: 0;
 }
 
-h3 { 
+h3 {
     font-size: 1.5rem;
     padding-bottom: .4rem;
     margin-top: 4rem;

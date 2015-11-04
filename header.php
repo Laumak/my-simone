@@ -9,7 +9,8 @@
  * @package my-simone
  */
 
-?><!DOCTYPE html>
+?>
+<!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 	<head>
 		<meta charset="<?php bloginfo( 'charset' ); ?>">
@@ -32,9 +33,9 @@
 					</a>
 				</div>
 			<?php endif; // End header image check. ?>
-			<?php 
-			    if ( get_header_image() && !('blank' == get_header_textcolor()) ) { 
-			        echo '<div class="site-branding header-background-image" style="background-image: url(' . get_header_image() . ')">'; 
+			<?php
+			    if ( get_header_image() && !('blank' == get_header_textcolor()) ) {
+			        echo '<div class="site-branding header-background-image" style="background-image: url(' . get_header_image() . ')">';
 			    } else {
 			        echo '<div class="site-branding">';
 			    }
@@ -51,8 +52,17 @@
 
 			<nav id="site-navigation" class="main-navigation" role="navigation">
 				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'my-simone' ); ?></button>
+        <div class="search-toggle">
+          <i class="fa fa-search"></i>
+          <a href="#search-container" class="screen-reader-text"><?php_e( 'Search', 'my-simone') ?></a>
+        </div>
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 			</nav><!-- #site-navigation -->
+			<div id="search-container" class="search-box-wrapper clear">
+			  <div class="search-box clear">
+			    <?php get_search_form(); ?>
+			  </div>
+			</div>
 		</header><!-- #masthead -->
 
 		<div id="content" class="site-content">
